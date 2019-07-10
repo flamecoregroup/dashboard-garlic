@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <!-- meta default -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Template 999-port-default">
+    <meta name="keywords" content="Template 999-port-default">
+    <meta name="author" content="Andika Chamberlin">
+    <meta name="robots" content="index, follow">
+    <!-- title -->
+    <title>Template</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/nel.png" type="image/x-icon">
+    <!-- mnel@alpha.style.js -->
+    <script src="https://cdn.jsdelivr.net/npm/mnel@1.1.1/mnel@alpha.style.js" integrity="sha256-xHUxzNYvOjTVWXD6Xak0PrSf4XJgWwiklF82YsBNXZg=" crossorigin="anonymous"></script>
+    <!-- callback mnel@alpha.style.js -->
+    <script>if(!window.jQuery) document.write('<script src="assets/js/mnel@alpha.style.js"><\/script>');</script>
+    <!-- callback font -->
+    <script>if(!window.jQuery) document.write('<script src="assets/js/fonts.js"><\/script>');</script>
+    <!-- dev.style.css -->
+    <link rel="stylesheet" href="assets/css/dev.style.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- alert dont support IE -->
+    <div id="_IE-Alert"></div>
+    <!-- end alert dont support IE -->
+
+    <!-- mouse wheel is not activated -->
+    <!-- <div class="_MW-Alert" id="_MW-Alert">
+
+    </div> -->
+    <!-- end mouse wheel is not activeted -->
+
+    <!-- load -->
+    <!-- <div class="_load" id="_load">
+        <div class="_load-middle">
+            <div class="_load-circle"></div>
+        </div>
+    </div> -->
+    <!-- end load -->
+
+    <!-- cursor -->
+    <div class="_cursor">
+        <div class="_cursor-inner _cursor-circle"></div>
+        <div class="_cursor-inner _cursor-dot"></div>
+    </div>
+    <!-- end cursor -->
+
+    <!--
+        Quote Author : your job is to try, not worry
+        ========================== 000-port-page ========================= 
+    -->
+
+    <div class="_racik-container _tab-main-list _tab-list">
+        <div class="_racik-sidebar">
+            <div class="_photo">
+
+                <div class="_online"></div>
+            </div>
+            <div class="_items _tab-main-list">
+                <a href="#main1" class="_tab-main _tab-main-active tooltipped" data-position="right" data-tooltip="Home">
+                    <i class="_position-middle material-icons">home</i>
+                </a>
+                <a href="#main2" class="_tab-main tooltipped" data-position="right" data-tooltip="Component">
+                    <i class="_position-middle material-icons">widgets</i>
+                </a>
+            </div>
+            <div class="_setting">
+                <i class="_position-middle material-icons">more_horiz</i>
+            </div>
+        </div>
+        <div class="_tab-nav">
+            <div class="_position-rightmiddle" id="_tab-nav-toggle">
+                <small>Collapsible</small> <i class="fa fa-chevron-down _tab-nav-icon"></i>
+            </div>
+        </div>
+        <div class="_tab-main-stuck">
+            <div class="_tab-main-content _show-main" id="main1">
+                <ul class="collapsible">
+                    <li class="active">
+                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Form</div>
+                        <div class="collapsible-body">
+                            <p href="#f1" class="_tab _tab-active"><i class="fa fa-circle-o _push-r-d"></i> <span>Checkboxs</span></p>
+                            <p href="#f2" class="_tab"><i class="fa fa-circle-o _push-r-d"></i> <span>Pickers</span></p>
+                            <p href="#f3" class="_tab"><i class="fa fa-circle-o _push-r-d"></i> <span>Select</span></p>
+                            <p href="#f4" class="_tab"><i class="fa fa-circle-o _push-r-d"></i> <span>Text Input</span></p>
+                            <p href="#f5" class="_tab"><i class="fa fa-circle-o _push-r-d"></i> <span>Table</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="_tab-main-content" id="main2">
+                2
+            </div>
+        </div>
+        <div class="_racik-content">
+            <div id="f1" class="_tab-content _show">
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" checked="checked" />
+                        <span>Filled in</span>
+                    </label>
+                </p>
+
+<xmp><p>
+    <label>
+        <input type="checkbox" class="filled-in" checked="checked" />
+        <span>Filled in</span>
+    </label>
+</p> 
+</xmp>
+
+            </div>
+            <div id="f2" class="_tab-content">
+                <div class="input-field">
+                    <i class="material-icons prefix">access_time</i>
+                    <input type="text" class="validate datepicker" placeholder="Datepicker">
+                    <label>Datepicker</label>
+                </div>
+
+<xmp><div class="input-field">
+    <i class="material-icons prefix">access_time</i>
+    <input type="text" class="validate datepicker" placeholder="Datepicker">
+    <label>Datepicker</label>
+</div>
+</xmp>
+            </div>
+            <div id="f3" class="_tab-content">
+
+                    <div class="input-field">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+
+<xmp><div class="input-field">
+    <select>
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+</div>
+</xmp>
+                
+            </div>
+            <div id="f4" class="_tab-content">
+                    <div class="input-field">
+                        <i class="material-icons prefix">fingerprint</i>
+                        <input type="text" class="validate" placeholder="Input Text">
+                        <label>Input Text</label>
+                    </div>
+
+<xmp><div class="input-field">
+    <i class="material-icons prefix">fingerprint</i>
+    <input type="text" class="validate" placeholder="Input Text">
+    <label>Input Text</label>
+</div>
+</xmp>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea" class="materialize-textarea"></textarea>
+                    <label for="textarea">Textarea</label>
+                </div>
+
+<xmp><div class="input-field">
+    <i class="material-icons prefix">mode_edit</i>
+    <textarea id="textarea" class="materialize-textarea"></textarea>
+    <label for="textarea">Textarea</label>
+</div>
+</xmp>
+
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="File">
+                    </div>
+                </div>
+
+<xmp><div class="file-field input-field">
+    <div class="btn">
+        <span>File</span>
+        <input type="file">
+    </div>
+    <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="File">
+    </div>
+</div>
+</xmp>
+            </div>
+            <div id="f5" class="_tab-content">
+                <table>
+                    <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Item Name</th>
+                          <th>Item Price</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>$0.87</td>
+                      </tr>
+                      <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td>$3.76</td>
+                      </tr>
+                      <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td>$7.00</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+<xmp><table>
+    <thead>
+      <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Alvin</td>
+        <td>Eclair</td>
+        <td>$0.87</td>
+      </tr>
+      <tr>
+        <td>Alan</td>
+        <td>Jellybean</td>
+        <td>$3.76</td>
+      </tr>
+      <tr>
+        <td>Jonathan</td>
+        <td>Lollipop</td>
+        <td>$7.00</td>
+      </tr>
+    </tbody>
+</table>
+</xmp>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- 
+        ========================== end 000-port-page =====================
+    -->
+
+    <!-- mnel.alpha.combine.js -->
+    <script id="_mnel-combine" src="https://cdn.jsdelivr.net/npm/mnel@1.1.1/mnel@alpha.combine.js" integrity="sha256-/81qmTXSEFdN8SKW7jxSk+Xf+xLdDeGl/OB7ODW9ans=" crossorigin="anonymous"></script>
+    <!-- callback mnel@alpha.combine.js -->
+    <script>if(!window.jQuery) document.write('<script src="assets/js/mnel@alpha.combine.js"><\/script>');</script>
+    <!-- mnel.alpha.main.js -->
+    <script src="https://cdn.jsdelivr.net/npm/mnel@1.1.1/mnel@alpha.main.js" integrity="sha256-3mFIBq0Mflke26K4Ku3LMo4CR8ETMQZsUHXMT0ZJ/2U=" crossorigin="anonymous"></script>
+    <!-- callback mnel@alpha.main.js-->
+    <script>if(!window.jQuery) document.write('<script src="assets/js/mnel@alpha.main.js"><\/script>');</script>
+    <!-- ie@alert -->
+    <script src="assets/js/ie@alert.js"></script>
+    <!-- dev.script -->
+    <script src="assets/js/dev.script.js"></script>
+    <!-- script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

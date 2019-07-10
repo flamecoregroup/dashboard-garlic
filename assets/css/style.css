@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------
+[Master Style]
+-------------------------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+}
+
+*,
+*::after,
+*::before {
+	cursor: none;
+}
+
+body{
+
+  /* Sans Serif */
+
+  /* font-family: 'Roboto', sans-serif; */
+  /* 400,500,700,900 */
+  font-family: 'Lato', sans-serif;
+  /* 400,700,900 */
+  /* font-family: 'Raleway', sans-serif; */
+  /* 400,500,600,700,800,900 */
+  /* font-family: 'Quicksand', sans-serif; */
+  /* 400,500,700 */
+
+  /* Hand Writing */
+
+  /* font-family: 'Pacifico', 'Segoe UI', sans-serif; */
+  /* font-family: 'Amatic SC', 'Segoe UI', sans-serif; */
+  /* font-family: 'Monoton', 'Segoe UI', sans-serif; */
+}
+
+/* ._lazy {
+  background-color: #eee;
+} */
+
+._lazy:before{
+  /* background-image: url('../img/loader/comet.gif'); */
+  background-image: url('../img/loader/dna.gif');
+  /* background-image: url('../img/loader/heart.gif'); */
+  /* background-image: url('../img/loader/infinite.gif'); */
+  /* background-image: url('../img/loader/parallax.gif'); */
+  /* background-image: url('../img/loader/windows10.gif'); */
+  /* background-image: url('../img/loader/yinyang.gif'); */
+}

@@ -1,0 +1,281 @@
+$main-color: red;
+$main-color-hover: green;
+$second-color: blue;
+$second-color-hover:yellow;
+
+._racik-container{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f9f9fa;
+
+    ._racik-sidebar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 80px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        background-color: #fff;
+        text-align: center;
+        z-index: 9998;
+
+        ._photo{
+            position: relative;
+            display: inline-block;
+            margin-top: 16px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url('../img/background/umbrella.png');
+
+            ._online{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 13px;
+                width: 13px;
+                border-radius: 50%;
+                background-color: rgb(23, 170, 184);
+                box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+            }
+        }
+
+        ._items{
+            position: absolute;
+            top: 30px;
+            right: 0;
+            bottom: 50px;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            & > a{
+                position: relative;
+                height: 60px;
+                width: 100%;
+                display: inline-block;
+                transition: 0.2s;
+
+                i{
+                    font-size: 28px;
+                }
+
+                &:hover{
+                    background-color: rgba(0,0,0,0.03);
+                }
+            }
+        }
+
+        ._setting{
+            position: absolute;
+            bottom: 16px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            margin-top: 16px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 50%;
+            transition: 0.2s;
+
+            &:hover{
+                background-color: rgba(0,0,0,0.03);
+            }
+        }
+    }
+}
+
+@media (min-width: 650px){
+    ._tab-main-content{
+        position: fixed;
+        top: 0;
+        left: 80px;
+        bottom: 0;
+        width: 200px;
+        background-color: #f9f9fa;
+        display: none;
+    
+        &._show-main {
+            display: block;
+        }
+    }
+
+    ._tab-nav{
+        display: none;
+    }
+}
+
+
+@media (max-width: 649px){
+    ._tab-main-stuck{
+        position: fixed;
+        bottom: 40px;
+        right: 0;
+        left: 80px;
+        height: 300px;
+        transition: 0.3s;
+        z-index: 999;
+        box-shadow: 0 -2px 20px rgba(0,0,0,0.04);
+    }
+    ._tab-main-stuck._tab-main-stuck-active{
+        transform: translateY(100%);
+    }
+    ._tab-main-content{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #f9f9fa;
+        display: none;
+    
+        &._show-main {
+            display: block;
+        }
+    }
+
+    ._tab-nav{
+        position: fixed;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        z-index: 9990;
+        background-color: #fefefe;
+        height: 40px;
+        box-shadow: 0 -2px 20px rgba(0,0,0,0.04);
+
+        ._position-rightmiddle{
+            padding: 16px 20px;
+
+            ._tab-nav-icon{
+                transition: 0.3s;
+                margin-left: 8px;
+            }
+            ._tab-nav-active{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+._racik-content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+
+    ._tab-content {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 280px;
+        bottom: 0;
+        right: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #fafafa;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        padding: 30px;
+        z-index: 10;
+        
+        &._show {
+            display: block;
+        }
+    }
+
+    @media (max-width: 649px){
+        ._tab-content{
+            left: 80px;
+        }
+    }
+
+    xmp{
+        border: none;
+        border-radius: 6px;
+        font-family: "Segoe UI";
+        font-size: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        background-color: #fcfcfc;
+        padding: 20px 26px;
+        margin: 20px 0 30px 0;
+        line-height: 1.8;
+    }
+
+}
+
+.collapsible{
+    border: none!important;
+    margin: 16px;
+
+    .active{
+        position: relative;
+        background-color: transparent!important;
+        color: rgb(23, 170, 184);
+        &:before{
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 0;
+            bottom: calc(100% - 50px);
+            left: 0;
+            z-index: -1;
+            background-color: rgba(42, 158, 173, 0.03);
+            
+            border-radius: 32px;
+        }
+    }
+}
+
+.collapsible-header,
+.collapsible-body{
+    border: none;
+}
+
+.collapsible-body{
+    position: relative;
+    padding: 16px 24px 16px 21px;
+    margin: 0;
+    background-color: #f9f9fa;
+    color: #777;
+
+    p{
+        padding: 8px 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &:hover{
+            color: rgb(23, 170, 184);
+        }
+    }
+}
+
+._tab-active {
+    background-color: rgba(42, 158, 173, 0.03);
+    color: rgb(23, 170, 184);
+    border-radius: 32px;
+}
+
+._tab-main-active{
+    background-color: rgba(42, 158, 173, 0.03);
+    color: rgb(23, 170, 184);
+}
